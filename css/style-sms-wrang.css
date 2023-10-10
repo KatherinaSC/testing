@@ -1,0 +1,126 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 400;
+  background-color: rgba(172, 228, 236, 0.883);
+}
+
+p {
+  margin: 0;
+}
+
+
+.container {
+  padding: 10px;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.logo {
+  width: 50px;
+}
+
+.form {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell {
+  margin-bottom: 30px;
+}
+
+.text {
+  margin-bottom: 10px;
+  color: red;
+  font-size: 20px;
+}
+
+.input {
+  padding: 16px 28px;
+  margin-bottom: 10px;
+  width: 320px;
+  border: 2px solid rgb(232, 5, 5);
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: rgba(172, 228, 236, 0.883);
+  text-align: center;
+  color: gray;
+}
+
+.input::placeholder {
+  color: gray;
+  font-size: 15px;
+}
+
+.btn {
+  margin-bottom: 8px;
+  width: 320px;
+  border: 1px solid #DADADA;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 16px 28px;
+  color: white;
+  background-color: rgb(22, 239, 255);
+  box-shadow: 0px 5px 10px 0px rgba(34, 34, 34, 0.3)
+}
+
+.span {
+  color: rgb(242, 8, 8);
+  font-size: 15px;
+}
+
+.block {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.descr {
+  text-align: center;
+  font-size: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 300px) {
+
+  .label {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
